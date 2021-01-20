@@ -1,3 +1,2 @@
-# Algorithms-solved-using-javascript
-
-I tried to cover the main data-structure and algorithm using javascript.
+# Algorithms-solved-using-javascrip
+It covered mid-level data-structure and algorithm question solved using javascript.
