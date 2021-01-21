@@ -859,3 +859,20 @@ function same (str1, str2){
   
   let string2='abcde';
   rotLeft2(string2,4);
+/////////////////////////////////////////////////////////////////////////////////////////////////
+Q : find the max number of occurence and print like this = 4 has max occurence 7
+let a = [1,2,3,56,12,2,2,4,4,4,4,4,4,3,4];
+
+Answer: function findMaxOccurence (a){
+  let obj={};
+  let maxNum;
+  let maxVal;
+  for(let v of a){
+    obj[v] = ++obj[v] ||1;
+    if(maxVal === undefined || obj[v] > maxVal){
+      maxNum= v;
+      maxVal= obj[v];
+    }
+    console.log(maxNum + 'has max value='. maxVal);
+  }
+        
