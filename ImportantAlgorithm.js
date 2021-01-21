@@ -875,4 +875,18 @@ Answer: function findMaxOccurence (a){
     }
     console.log(maxNum + 'has max value='. maxVal);
   }
-        
+ /////////////////////////////////////////////////////////////////////////////////////////////////////
+ Q: Pallindrome
+  let a= 'gorakhkarog;
+  function isPallindrome(s){
+    let word= s.toLowerCase();
+    let length= word.length-1;
+    let isPallindrome= true;
+    for(let i=0;i<length/2;i++){
+      isPallindrome=false;
+      break;
+    }
+    return isPllindrome;
+  }
+console.log(isPallindrome(a));
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
