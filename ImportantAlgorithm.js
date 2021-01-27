@@ -890,3 +890,44 @@ Answer: function findMaxOccurence (a){
   }
 console.log(isPallindrome(a));
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Q: contains dublicates or not
+  ans: function(arr){
+    return num.some((item, i)=> num.indexOf(item)!==i);
+  }
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Q: merge two sorted array
+  ans: function sort(a,b){
+    let arr=[];
+    let i=j=0;
+    let first=a[i];
+    let second=b[j];
+    while(first|| second){
+      if(!first || first> second){
+        arr.push(second);
+        j++;
+        second=b[j];
+      }
+      else{
+        arr.push(first);
+        first= a[i];
+        i++
+      }
+    }
+  }
+  //////////////////////////////////////////////////
+  Q: MAxStock
+  ans: function MaxStock(stock){
+    let minPrice= stock[0];
+    let maxDiff= stock[1] - stock[0];
+    for(let v=0;v< stock.length;i++){
+      let diff= stock[v+1] - stock[v];
+      let m2= Math.max(diff, maxDiff);
+      if(m2> maxDiff){
+        minPrice= Math.min(stock[v],minPrice);
+        maxDiff=stock[v+1];
+      }
+    }
+    console.log(minPrice, maxDiff);
+  }
+  
